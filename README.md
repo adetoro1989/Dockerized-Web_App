@@ -50,3 +50,6 @@ Database credentials are managed via environment variables in \`docker-compose.y
 - **Data Persistence:** Uses a named volume \`postgres_data\` to prevent data loss.
 - **Fast Development:** Live code reloading is supported when volumes are mapped.
 - **API Standard:** OpenAPI 3.0 compliant via Flasgger.
+
+## CI-CD FOR MY APP
+- I updated CI-CD workflow and for every push to main branch, the app will build a new docker image and push to docker hub. Details of the code is found in the deploy.yml file.
