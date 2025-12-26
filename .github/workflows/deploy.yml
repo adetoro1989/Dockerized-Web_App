@@ -20,4 +20,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/your-app-name:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/web-app:latest
