@@ -12,13 +12,13 @@ app.config['SQLALCHEMY_DATABASE_URI'] = (
     f"{os.getenv('DB_HOST')}:5432/"
     f"{os.getenv('POSTGRES_DB')}"
 )
-cache = redis.Redis(
-    host=os.getenv("REDIS_HOST"),
-    port=6379,
-    decode_responses=True
-    db = SQLAlchemy(app)
-)
-
+#cache = redis.Redis(
+    #host=os.getenv("REDIS_HOST"),
+    #port=6379,
+    #decode_responses=True
+    
+#)
+db = SQLAlchemy(app)
 @app.route('/')
 def index():
     try:
